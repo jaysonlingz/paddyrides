@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paddy Rides - School Van Registration</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="registration.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-content">
+        <a class="logo" href="index.html">
+          <img src="PR LOGO.jpeg" alt="Paddy Rides logo" class="logo-image" />
+        </a>
+
+        <nav class="nav-links" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a class="active" href="registration.html">School Van</a>
+          <a href="gallery.html">Fleet</a>
+          <a href="location.html">Location</a>
+        </nav>
+
+        <div class="contact-header">
+          <a href="https://wa.me/256757497850" class="contact-btn whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+          <a href="tel:+256757497850" class="contact-btn">
+            <i class="fas fa-phone"></i> Call Now
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div class="container">
+        <h2>School Van Registration</h2>
+        <p>Register your child for safe and reliable school transport.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div id="successMessage" class="success-message">
+          <i class="fas fa-check-circle" style="font-size: 40px; margin-bottom: 15px"></i>
+          <h3>Registration Submitted Successfully!</h3>
+          <p>
+            We will contact you within 24 hours to confirm. For immediate assistance, WhatsApp us at
+            +256757497850
+          </p>
+        </div>
+
+        <div class="form-container">
+          <form id="registrationForm">
+            <h3 class="section-heading">Student Details</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="studentName">Student Full Name *</label>
+                <input type="text" id="studentName" required />
+              </div>
+              <div class="form-group">
+                <label for="studentAge">Student Age *</label>
+                <input type="number" id="studentAge" min="3" max="18" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="schoolName">School Name *</label>
+                <input type="text" id="schoolName" required />
+              </div>
+              <div class="form-group">
+                <label for="studentGrade">Class/Grade *</label>
+                <input type="text" id="studentGrade" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="pickupLocation">Pickup Location (Full Address) *</label>
+              <input type="text" id="pickupLocation" required />
+            </div>
+
+            <h3 class="section-heading">Parent/Guardian Details</h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="parentName">Parent/Guardian Name *</label>
+                <input type="text" id="parentName" required />
+              </div>
+              <div class="form-group">
+                <label for="primaryPhone">Primary Phone *</label>
+                <input type="tel" id="primaryPhone" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="altPhone">Alternative Phone</label>
+                <input type="tel" id="altPhone" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="pickupTime">Morning Pickup Time *</label>
+                <select id="pickupTime" required>
+                  <option value="">Select Time</option>
+                  <option value="6:30 AM">6:30 AM</option>
+                  <option value="7:00 AM">7:00 AM</option>
+                  <option value="7:30 AM">7:30 AM</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="dropoffTime">Afternoon Drop-off *</label>
+                <select id="dropoffTime" required>
+                  <option value="">Select Time</option>
+                  <option value="4:00 PM">4:00 PM</option>
+                  <option value="5:00 PM">5:00 PM</option>
+                  <option value="5:30 PM">5:30 PM</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="specialInstructions"
+                >Special Instructions (Allergies, Medical Conditions, etc.)</label
+              >
+              <textarea id="specialInstructions"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-paper-plane"></i> Submit Registration
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Paddy Rides</h3>
+            <p>
+              Your trusted transport partner in Entebbe, Uganda. Safe, reliable and affordable
+              transport services since 2010.
+            </p>
+            <div class="social-links">
+              <a href="https://wa.me/256757497850"><i class="fab fa-whatsapp"></i></a>
+              <a href="tel:+256757497850"><i class="fas fa-phone"></i></a>
+              <a href="mailto:paddykats@hotmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Contact Info</h3>
+            <div class="contact-info">
+              <p><i class="fas fa-map-marker-alt"></i> Entebbe, Uganda</p>
+              <p><i class="fas fa-phone"></i> +256757497850</p>
+              <p><i class="fas fa-phone"></i> +256707021569</p>
+              <p><i class="fas fa-envelope"></i> paddykats@hotmail.com</p>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul style="list-style: none">
+              <li style="margin-bottom: 10px">
+                <a href="index.html" style="color: white; text-decoration: none">Home</a>
+              </li>
+              <li style="margin-bottom: 10px">
+                <a href="services.html" style="color: white; text-decoration: none">Services</a>
+              </li>
+              <li style="margin-bottom: 10px">
+                <a href="gallery.html" style="color: white; text-decoration: none">Our Vehicles</a>
+              </li>
+              <li>
+                <a href="location.html" style="color: white; text-decoration: none">Location</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>© 2023 Paddy Rides. All rights reserved. | Safe Transport Services in Entebbe, Uganda</p>
+          <p style="margin-top: 10px">Website designed for easy use on all devices</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("registrationForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const studentName = document.getElementById("studentName").value;
+        const parentName = document.getElementById("parentName").value;
+        const phone = document.getElementById("primaryPhone").value;
+
+        const success = document.getElementById("successMessage");
+        success.classList.add("show");
+
+        const message = `New School Van Registration:
+
+Student: ${studentName}
+Parent: ${parentName}
+Phone: ${phone}
+
+Please contact to confirm.`;
+
+        this.reset();
+        success.scrollIntoView({ behavior: "smooth" });
+
+        console.log("Registration submitted for:", studentName);
+        // window.open(`https://wa.me/256757497850?text=${encodeURIComponent(message)}`, "_blank");
+      });
+    </script>
+  </body>
+</html>
+
